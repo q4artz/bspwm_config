@@ -2,6 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
+bspc monitor -g 1920x1080+0+0
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config border_width         2
@@ -13,7 +14,7 @@ bspc config gapless_monocle      true
 bspc config pointer_follows_focus true
 bspc config focus_follows_pointer true
 
-bspc rule -a desktop='^10' state=floating follow=on
+
 bspc rule -a Chromium desktop='^2'
 bspc rule -a firefox desktop='^2'
 bspc rule -a VSCodium desktop='^3'
