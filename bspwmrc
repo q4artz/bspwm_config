@@ -18,7 +18,6 @@ bspc config focus_follows_pointer true
 bspc rule -a Chromium desktop='^2'
 bspc rule -a firefox desktop='^2'
 bspc rule -a VSCodium desktop='^3'
-bspc rule -a discord desktop='^4'
 bspc rule -a Steam desktop='^9'
 bspc rule -a Lutris desktop='^8'
 bspc rule -a lmms desktop='^7'
