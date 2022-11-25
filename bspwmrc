@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 	
-if [[$(xrandr -q | grep 'HDMI-A-0 connected' & $(xrandr -q | grep 'eDP connected')) ]]; 
+if [[$(xrandr -q | grep 'HDMI-A-0 connected')]]; 
 then
 xrandr --output eDP --primary --mode 1920x1080 --rotate normal 
 --output HDMI-A-0 --mode 1920x1080 --rotate normal
